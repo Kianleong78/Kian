@@ -1,0 +1,6 @@
+{
+  "name": "Markets Overview",
+  "description": "Real-time global financial markets dashboard, interactive stock and index charts, watchlist, and AI market analysis.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

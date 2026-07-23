@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .font-data-tabular {
+    font-family: 'JetBrains Mono', monospace;
+    font-variant-numeric: tabular-nums;
+  }
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .fade-right {
+    mask-image: linear-gradient(to right, black 85%, transparent 100%);
+  }
+}
+
+@keyframes priceFlashUp {
+  0% { background-color: rgba(8, 153, 129, 0.35); }
+  100% { background-color: transparent; }
+}
+
+@keyframes priceFlashDown {
+  0% { background-color: rgba(242, 54, 69, 0.35); }
+  100% { background-color: transparent; }
+}
+
+.flash-up {
+  animation: priceFlashUp 0.8s ease-out;
+}
+
+.flash-down {
+  animation: priceFlashDown 0.8s ease-out;
+}
